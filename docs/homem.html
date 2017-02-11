@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Teste sua masculinidade</title>
+    <style>
+        .resposta div{
+            float: left;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function overBicha(){
+            document.getElementById("btnBicha").style.display = 'none';
+        }
+
+        function outBicha(){
+            document.getElementById("btnBicha").style.display = 'block';
+        }
+
+        function bichona(){
+            alert("Hummm boiolaaa!!!!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Você é homem?</h1>
+    <div class="resposta">
+        <div><button onclick="bichona()">Não, sou uma bichona!</button></div>
+        <div onmouseover="overBicha()" on="overBicha()" onmouseout="outBicha()">
+            <button id="btnBicha" onfocus="overBicha()">Claro que sou homem!</button>
+        </div>
+    </div>
+</body>
+</html>
